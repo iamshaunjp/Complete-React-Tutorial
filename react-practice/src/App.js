@@ -1,18 +1,14 @@
-import './App.css';
-import Navbar from './Navbar'
-import Home from './Home'
+import Navbar from './Navbar';
+import Home from './Home';
 
 
 function App() {
-const title = 'Add Component'
-const likes = 50;
-const link = "https://www.google.com/"
 
 
   return (
-    <div className="App">
+    <div className='App'>
       <Navbar />
-      <div className='content'>
+      <div className = 'content'>
         <Home />  
       </div>
     </div>
