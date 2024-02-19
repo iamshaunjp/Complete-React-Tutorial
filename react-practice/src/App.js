@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import Example from './Example';
 
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
       <Navbar />
       <div className = 'content'>
         <Home />  
+        <Example />  
+
       </div>
     </div>
     
