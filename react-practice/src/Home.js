@@ -14,6 +14,7 @@ const [blogs, setBlogs] = useState([
   return (
     <div className='home'>
       <BlogList blogs = {blogs} title = 'Filip is Developer' />
+      <BlogList blogs = {blogs.filter((blog)=> blog.author === 'Dimitar' )} title = 'Dimitar is Engineer' />
     </div>
   )
 }
