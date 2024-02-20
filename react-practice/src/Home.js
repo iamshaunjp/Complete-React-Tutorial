@@ -11,10 +11,19 @@ const [blogs, setBlogs] = useState([
   {title: 'site', job: 'Developer', author:'Dimitar', id: 3}
 ])
 
+const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog =>  blog.id !== id))
+    setBlogs(newBlogs);
+    console.log(newBlogs)
+   
+}
+
+
   return (
     <div className='home'>
-      <BlogList blogs = {blogs} title = 'Filip is Developer' />
-      <BlogList blogs = {blogs.filter((blog)=> blog.author === 'Dimitar' )} title = 'Dimitar is Engineer' />
+      <BlogList blogs = {blogs} title = 'Filip is Developer' handleDelete={handleDelete} />
+
+      
     </div>
   )
 }
